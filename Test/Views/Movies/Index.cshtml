@@ -1,0 +1,68 @@
+﻿@using Test.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Movies";
+    
+}
+
+<h1>Movies in our database: </h1>
+<br />
+@foreach (Movie item in ViewBag.MyList)
+{
+    <p>@item.Name</p>
+
+}
+
+<br />
+<br />
+<br />
+
+<ol>
+    <li>Horror</li>
+    <li>Adventure</li>
+    <li>Romance</li>
+</ol>
+
+<br />
+<br />
+<br />
+
+<table>
+    <tr>
+        <th>
+            The Planets
+        </th>
+        <th>
+            The Ocenas
+        </th>
+        <th>
+            The Deserts
+        </th>
+    </tr>
+    <tr>
+        <td> Earth </td>
+        <td> Pacific </td>
+        <td> Sahara </td>
+    </tr>
+    <tr>
+        <td> Deasd </td>
+        <td> Atlantic </td>
+        <td> Gobi </td>
+    </tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<p><img src="~/Images/predator.jpg" width="150" height="150"/></p>
+
+<form>
+    <fieldset>
+       <input type="date" name="day" />
+        <br />
+
+    
+     </fieldset>
+</form>
