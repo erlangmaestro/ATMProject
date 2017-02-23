@@ -29,5 +29,7 @@ namespace Test.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<CheckingAccount> ChecikingAccounts { get; set; }
     }
 }
